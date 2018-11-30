@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<script>
+        // ***Set Event Variables***
+
+    var mondayEvent = "Monday Event";
+    var tuesdayEvent = "Tuesday Event";
+    var wednesdayEvent = "Wednesday Event";
+    var thursdayEvent = "Thursday Event";
+    var fridayEvent = "Friday Event";
+    var saturdayEvent = "Saturday Event";
+    var sundayEvent = " Sunday Event";
+
+    // ****End of Event Variables****
+
+    // *** Set Month ***
+    var month;
+    switch (new Date().getMonth()) {
+    case 0:
+        month = "January";
+        break;
+    case 1:
+        month = "February";
+        break;
+    case 2:
+        month = "March";
+        break;
+    case 3:
+        month = "April";
+        break;
+    case 4:
+        month = "May";
+        break;
+    case 5:
+        month = "June";
+        break;
+    case 6:
+        month = "July";
+        break;
+    case 7:
+        month = "August";
+        break;
+    case 8:
+        month = "September";
+        break;
+    case 9:
+        month = "October";
+        break;
+    case 10:
+        month = "November";
+        break;
+    case 11:
+        month = "December";
+    }
+
+    // ****End of Month****
+
+    // ***Set Day of the Week***
+
+    var day = new Date();
+    var weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+    var today = weekday[day.getDay()];
+
+    var tom = new Date();
+    tom.setDate(tom.getDate() + 1);
+    var tomorrow = weekday[tom.getDay()];
+
+    var third_day = new Date();
+    third_day.setDate(third_day.getDate() + 2);
+    var next_day = weekday[third_day.getDay()];
+
+    var fourth_day = new Date();
+    fourth_day.setDate(fourth_day.getDate() + 3);
+    var next_day_plus = weekday[fourth_day.getDay()];
+
+    var fifth_day = new Date();
+    fifth_day.setDate(fifth_day.getDate() + 4);
+    var next_day_plus_two = weekday[fifth_day.getDay()];
+
+    var sixth_day = new Date();
+    sixth_day.setDate(sixth_day.getDate() + 5);
+    var next_day_plus_three = weekday[sixth_day.getDay()];
+
+    var seventh_day = new Date();
+    seventh_day.setDate(seventh_day.getDate() + 6);
+    var next_day_plus_four = weekday[seventh_day.getDay()];
+
+
+    // ****End of Day of the Week****
+
+    // ***Set Date***
+    var date = new Date();
+    var today_date = date.getDate();
+
+    var tom = new Date(new Date().getTime() + 24 * 60 * 60 * 1000)
+    var tomorrow_date = tom.getDate();
+
+    var third_date = new Date(new Date().getTime() + 48 * 60 * 60 * 1000)
+    var next_day_date = third_date.getDate();
+
+    var fourth_date = new Date(new Date().getTime() + 72 * 60 * 60 * 1000)
+    var next_day_plus_date = fourth_date.getDate();
+
+    var fifth_date = new Date(new Date().getTime() + 96 * 60 * 60 * 1000)
+    var next_day_plus_two_date = fifth_date.getDate();
+
+    var sixth_date = new Date(new Date().getTime() + 120 * 60 * 60 * 1000)
+    var next_day_plus_three_date = sixth_date.getDate();
+
+    var seventh_date = new Date(new Date().getTime() + 144 * 60 * 60 * 1000)
+    var next_day_plus_four_date = seventh_date.getDate();
+
+    // ****End of Date****
+
+    // ***Set Events***
+    var day = new Date();
+    var event = new Array(7);
+    event[0] = sundayEvent;
+    event[1] = mondayEvent;
+    event[2] = tuesdayEvent;
+    event[3] = wednesdayEvent;
+    event[4] = thursdayEvent;
+    event[5] = fridayEvent;
+    event[6] = saturdayEvent;
+
+    var todays_event = event[day.getDay()];
+
+    var tom_event = new Date();
+    tom_event.setDate(tom_event.getDate() + 1);
+    var tomorrow_event = event[tom_event.getDay()];
+
+    var third_day_event = new Date();
+    third_day_event.setDate(third_day_event.getDate() + 2);
+    var next_day_event = event[third_day_event.getDay()];
+
+    var fourth_day_event = new Date();
+    fourth_day_event.setDate(fourth_day_event.getDate() + 3);
+    var next_day_plus_event = event[fourth_day_event.getDay()];
+
+    var fifth_day_event = new Date();
+    fifth_day_event.setDate(fifth_day_event.getDate() + 4);
+    var next_day_plus_two_event = event[fifth_day_event.getDay()];
+
+    var sixth_day_event = new Date();
+    sixth_day_event.setDate(sixth_day_event.getDate() + 5);
+    var next_day_plus_three_event = event[sixth_day_event.getDay()];
+
+    var seventh_day_event = new Date();
+    seventh_day_event.setDate(seventh_day_event.getDate() + 6);
+    var next_day_plus_four_event = event[seventh_day_event.getDay()];
+
+    // ****End of Events****
+</script>
+
+<!-- ****Write to webpage**** -->
+<script>document.write('<strong class="month">' + month.toUpperCase() + '</strong></h2>');</script>
+<hr>
+<script>document.write('<p class="text-center text-med">' + today +'</p>');</script>
+<script>document.write('<p class="month">' + today_date +'</p>');</script>
+<script>document.write('<p class="text-center text-med">' + todays_event + '</p>');</script>
+<hr>
+<script>document.write('<p class="text-center text-med">' + tomorrow +'</p>');</script>
+<script>document.write('<p class="month">' + tomorrow_date +'</p>');</script>
+<script>document.write('<p class="text-center text-med">' + tomorrow_event + '</p>');</script>
+<hr>
+<script>document.write('<p class="text-center text-med">' + next_day +'</p>');</script>
+<script>document.write('<p class="month">' + next_day_date +'</p>');</script>
+<script>document.write('<p class="text-center text-med">' + next_day_event + '</p>');</script>
+<hr>
+<script>document.write('<p class="text-center text-med">' + next_day_plus +'</p>');</script>
+<script>document.write('<p class="month">' + next_day_plus_date +'</p>');</script>
+<script>document.write('<p class="text-center text-med">' + next_day_plus_event + '</p>');</script>
+<hr>  
+<script>document.write('<p class="text-center text-med">' + next_day_plus_two +'</p>');</script>
+<script>document.write('<p class="month">' + next_day_plus_two_date +'</p>');</script>
+<script>document.write('<p class="text-center text-med">' + next_day_plus_two_event + '</p>');</script>
+<hr>
+<script>document.write('<p class="text-center text-med">' + next_day_plus_three +'</p>');</script>
+<script>document.write('<p class="month">' + next_day_plus_three_date +'</p>');</script>
+<script>document.write('<p class="text-center text-med">' + next_day_plus_three_event + '</p>');</script>
+<hr>
+                     
+<script>document.write('<p class="text-center text-med">' + next_day_plus_four +'</p>');</script>
+    <script>document.write('<p class="month">' + next_day_plus_four_date +'</p>');</script>
+    <script>document.write('<p class="text-center text-med">' + next_day_plus_four_event + '</p>');</script>
+</html>
